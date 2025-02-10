@@ -138,6 +138,3 @@ def calculate_statistic(
     else:
         raise ValueError("Invalid measure. Choose 'mean', 'median', or 'mode'.")
 
-
-
-
