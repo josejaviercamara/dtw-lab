@@ -21,8 +21,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     # Remove outliers
     df = df [( df [ ' Avg_Operating_Temperature '] <= 100) ]
     df = df [ ( df [ ' Days_Since_Production '] <= 20000) ]
-    df = df [( df [ ' Current_Voltage '] >= 0.5) & ( df [ '
-    Current_Voltage '] <= 2) ]
+    df = df [( df [ ' Current_Voltage '] >= 0.5) & ( df [ 'Current_Voltage '] <= 2) ]
     df = df [ df [' Battery_Size '] != '9 - Volt ']
     return df
 
